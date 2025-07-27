@@ -98,7 +98,10 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     homepage = "https://akouzoukos.com/apotris/";
     license = lib.licenses.agpl3Only;
-    maintainers = with lib.maintainers; [ oluceps ];
+    maintainers = with lib.maintainers; [
+      oluceps
+      bizmyth
+    ];
     mainProgram = "Apotris";
     inherit (SDL2.meta) platforms;
     broken = stdenv.hostPlatform.isDarwin;
